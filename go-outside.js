@@ -30,7 +30,7 @@ if (cold) {
 } else {
   console.log("Short sleeves are fine.");
 }
-var temperature = 12;
+var temperature = 15;
 
 if (temperature < 0) {
   console.log("Make sure you pick out a scarf!");

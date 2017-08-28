@@ -1,4 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>tinyApp</title>
+<head>
 
-<h1>
-Tiny App!
-</h1>
+  <meta charset="utf-8">
+
+  <nav id="nav-bar" style= "background-color: #009999; height: 80px; width: 100%; line-height: 2;">
+    <img class="tinyrick" src="https://ih1.redbubble.net/image.199390969.3002/ap,550x550,12x12,1,transparent,t.u2.png" height="100" width="100" style= "float: left; margin-left:-5px; margin-top:-5px;">
+    <h1 class="header" style="font-family: Arial; font-color:#0f1f3d;">TinyApp</h1>
+
+
+    <div id="Registerbutton">
+  <% if (!user) { %>
+    <button style="float: right; margin-top: -30px;"><a href="http://localhost:8080/register">Register</a></button>
+  </nav>
+</head>
+
+
+<body>
+<div></div>
+
+
+  </form>
+  <%  } else { %>
+  <p>Hello, <%= user.email %></p>
+    <form method="POST" action="/logout">
+    <input type="submit" value="logout">
+  <% }; %>
+  </form>
+<body>
+</html>
